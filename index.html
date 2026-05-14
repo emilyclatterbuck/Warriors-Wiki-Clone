@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<style>
+    body {
+        background-color: rgb(116, 165, 225);
+        text-align: center;
+    }
+  
+    h1 {
+        background-color: rgb(28, 28, 111);
+        color: white;
+        text-align: center;
+    }
+
+    .col-9 {
+        background-color: rgb(190, 218, 236);
+        margin:20px;
+        padding: 10px;
+    }
+
+    .welcomeCarousel {
+        height: 400px;
+    }    
+    
+    .col {
+        background-color: rgb(190, 218, 236);
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    ul {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 15px;
+        text-align: left;
+        font-style: italic;
+    }
+
+    a {
+        color: rgb(43, 43, 157);
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/index">Main Page</a></li>
+            <li><a class="dropdown-item" href="#">All Pages</a></li>
+            <li><a class="dropdown-item" href="#">Community</a></li>
+            <li><a class="dropdown-item" href="#">Interactive Maps</a></li>
+            <li><a class="dropdown-item" href="#">Recent Blog Posts</a></li>
+            <li><a class="dropdown-item" href="#">Random Page</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chasing Shadows
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Characters</a></li>
+            <li><a class="dropdown-item" href="#">Groups</a></li>
+            <li><a class="dropdown-item" href="#">Locations</a></li>
+            <li><a class="dropdown-item" href="#">Resources</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Books
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Main arcs</a></li>
+            <li><a class="dropdown-item" href="#">Super Editions</a></li>
+            <li><a class="dropdown-item" href="#">Novellas</a></li>
+            <li><a class="dropdown-item" href="#">Field Guides</a></li>
+            <li><a class="dropdown-item" href="#">Graphic Novels</a></li>
+            <li><a class="dropdown-item" href="#">Extras and Bonuses</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Characters
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Riverclan</a></li>
+            <li><a class="dropdown-item" href="#">Shadowclan</a></li>
+            <li><a class="dropdown-item" href="#">Skyclan</a></li>
+            <li><a class="dropdown-item" href="#">Thunderclan</a></li>
+            <li><a class="dropdown-item" href="#">Windclan</a></li>
+            <li><a class="dropdown-item" href="#">Clanless Cats</a></li>
+            <li><a class="dropdown-item" href="#">Random Character</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Information</a></li>
+            <li><a class="dropdown-item" href="#">Staff</a></li>
+            <li><a class="dropdown-item" href="#">Polecies</a></li>
+            <li><a class="dropdown-item" href="#">Projects</a></li>
+            <li><a class="dropdown-item" href="#">Forums</a></li>
+          </ul>
+        </li>
+      </ul>
+   </div>
+   </div>
+   </nav>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-9">
+      <h1>Welcome to the Warriors Wiki!</h1>
+          <p>This is a clone of the Fandom Wiki for the Warriors series by Erin Hunter. It was founded on June 21st, 2006. It has 5,713 articles, 1,951,951 edits, and currently 117 active editors. It's goal is to create a quality database for the series in its entirety. Anyone can be an editor. If you want to start editing the wiki, check out the wiki rules and the community tab, and contact a staff member if you have any questions.</p>
+    <div id="welcomeCarousel" class="carousel slide">
+         <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://static.wikia.nocookie.net/warriors/images/8/87/TPB-3-Inside-FC.png/revision/latest/scale-to-width-down/670?cb=20250531145501" class="d-block w-100" alt="spottedleaf standing in a pond surrounded by starclan cats" height="500px" width="400px">
+           </div>
+            <div class="carousel-item">
+            <img src="https://static.wikia.nocookie.net/warriors/images/8/86/NP-1-FC.jpg/revision/latest/scale-to-width-down/670?cb=20181215102946" class="d-block w-100" alt="shadows of cats standing in front of a stary night sky" height="500px" width="400px"> 
+           </div>
+           <div class="carousel-item">
+            <img src="https://static.wikia.nocookie.net/warriors/images/f/fb/ThunderClan.RP3.png/revision/latest/scale-to-width-down/670?cb=20250217234728" class="d-block w-100" alt="dustpelt, graystripe, firestar, brightheart, cloudtail, and sandstorm standing in a line" height="500px" width="400px">
+            </div>
+            <div class="carousel-item">
+            <img src="https://static.wikia.nocookie.net/warriors/images/7/70/The_forest_territories.TPB-2.png/revision/latest/scale-to-width-down/670?cb=20250408003522" class="d-block w-100" alt="a map of the forest territories from the warriors graphic novel" height="500px" width="400px">
+            </div>
+          </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+  </button>
+  <br>
+  <h1>Newest Release: Chasing Shadows</h1>
+  <img src="https://static.wikia.nocookie.net/warriors/images/9/93/CS-3.png/revision/latest?cb=20251103224417" height="500px">
+  <p>Moonpaw finally confesses to her Clanmates that her dead sister has been torturing her in her mind. But as Moonpaw grows closer to Goldenpaw, her sister's threats become more ominous, and Moonpaw worries she's a danger to her entire Clan. Tawnypelt is sure that only the elders can see the Clans through the oncoming danger. Starlingpaw grows bolder in his belief that he alone must save the Clans. But can an apprentice really hold the key to their salvation?</p>
+  <br>
+  <h1>Books</h1>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="tpb-tab" data-bs-toggle="tab" data-bs-target="#tpb-tab-pane" type="button" role="tab" aria-controls="tpb-tab-pane" aria-selected="true">The Prophecies Begin</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tnp-tab" data-bs-toggle="tab" data-bs-target="#tnp-tab-pane" type="button" role="tab" aria-controls="tnp-tab-pane" aria-selected="false">The New Prophecy</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="po3-tab" data-bs-toggle="tab" data-bs-target="#po3-tab-pane" type="button" role="tab" aria-controls="po3-tab-pane" aria-selected="false">Power of Three</button>
+  </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link" id="oots-tab" data-bs-toggle="tab" data-bs-target="#oots-tab-pane" type="button" role="tab" aria-controls="oots-tab-pane" aria-selected="false">Omen of the Stars</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="dotc-tab" data-bs-toggle="tab" data-bs-target="#dotc-tab-pane" type="button" role="tab" aria-controls="dotc-tab-pane" aria-selected="false">Dawn of the Clans</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="tpb-tab-pane" role="tabpanel" aria-labelledby="tpb-tab" tabindex="0"><p>In the first series, sinister perils threaten the four warrior Clans. Into the midst of this turmoil comes Rusty, an ordinary housecat, who may just be the bravest of them all.</p>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/3/37/OS-1.jpg/revision/latest?cb=20250702133532" height="200px">
+     <br>
+      <a href="#">Into the Wild</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/c/cd/OS-2.jpg/revision/latest?cb=20250702163232" height="200px">
+     <br>
+      <a href="#">Fire and Ice</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/6/62/OS-3.jpg/revision/latest?cb=20250702164141" height="200px">
+     <br>
+      <a href="#">Forest of Secrets</a>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/c/c7/OS-4.jpg/revision/latest?cb=20241022041914" height="200px">
+     <br>
+      <a href="#">Rising Storm</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/3/3b/OS-5.jpg/revision/latest?cb=20250807190409" height="200px">
+     <br>
+      <a href="#">A Dangerous Path</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/d/d9/OS-6.jpg/revision/latest?cb=20250702170154" height="200px">
+     <br>
+      <a href="#">The Darkest Hour</a>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="tab-pane fade" id="tnp-tab-pane" role="tabpanel" aria-labelledby="tnp-tab" tabindex="0"><p>In the second series, follow the next generation of heroic cats as they set off on a quest to save the Clans from destruction.</p>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/3/32/NP-1.jpg/revision/latest?cb=20240529232640" height="200px">
+     <br>
+      <a href="#">Midnight</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/4/4b/NP-2.jpg/revision/latest?cb=20240530171539" height="200px">
+     <br>
+      <a href="#">Moonrise</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/2/2c/NP-3.jpg/revision/latest?cb=20250702174054" height="200px">
+     <br>
+      <a href="#">Dawn</a>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/b/b7/NP-4.jpg/revision/latest?cb=20241203024546" height="200px">
+     <br>
+      <a href="#">Starlight</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/a/a2/NP-5.jpg/revision/latest?cb=20250308021531" height="200px">
+     <br>
+      <a href="#">Twilight</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/4/43/NP-6.jpg/revision/latest?cb=20241022034212" height="200px">
+     <br>
+      <a href="#">Sunset</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="tab-pane fade" id="po3-tab-pane" role="tabpanel" aria-labelledby="po3-tab" tabindex="0"><p>In the third series, Firestar's grandchildren begin their training as warrior cats. Prophecy foretells that they hold more power than any cats before them.</p>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/2/24/PO3-1.jpg/revision/latest?cb=20241022025858" height="200px">
+     <br>
+      <a href="#">The Sight</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/7/77/PO3-2.jpg/revision/latest/scale-to-width-down/1000?cb=20241022040255" height="200px">
+     <br>
+      <a href="#">Dark River</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/a/a8/PO3-3.jpg/revision/latest?cb=20241026152011" height="200px">
+     <br>
+      <a href="#">Outcast</a>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/3/3f/PO3-4.jpg/revision/latest?cb=20241026125449" height="200px">
+     <br>
+      <a href="#">Eclipse</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/e/eb/PO3-5.jpg/revision/latest?cb=20241026125122" height="200px">
+     <br>
+      <a href="#">Long Shadows</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/8/89/PO3-6.jpg/revision/latest?cb=20241026140913" height="200px">
+     <br>
+      <a href="#">Sunrise</a>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="tab-pane fade" id="oots-tab-pane" role="tabpanel" aria-labelledby="oots-tab" tabindex="0"><p>In the fourth series, find out which ThunderClan apprentice will complete the prophecy that foretells that three cats hold the future of the Clans in their paws. Meanwhile, a dangerous force from the darkness rises.</p>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/9/94/OTS-1.jpg/revision/latest?cb=20241026143818" height="200px">
+     <br>
+      <a href="#">The Fourth Apprentice</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/7/76/OTS-2.jpg/revision/latest?cb=20241203021327" height="200px">
+     <br>
+      <a href="#">Fading Echos</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/8/82/OTS-3.jpg/revision/latest?cb=20241026144935" height="200px">
+     <br>
+      <a href="#">Night Whispers</a>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/a/ab/OTS-4.jpg/revision/latest?cb=20240712022157" height="200px">
+     <br>
+      <a href="#">Sign of the Moon</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/1/13/OTS-5.png/revision/latest?cb=20240712031257" height="200px">
+     <br>
+      <a href="#">The Forgotten Warrior</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/7/70/OTS-6.jpg/revision/latest?cb=20240712030851" height="200px">
+     <br>
+      <a href="#">The Last Hope</a>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="tab-pane fade" id="dotc-tab-pane" role="tabpanel" aria-labelledby="dotc-tab" tabindex="0"><p>In this fifth series, discover how the warrior Clans came to be.</p>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/8/81/DTC-1.jpg/revision/latest?cb=20240607041455" height="200px">
+     <br>
+      <a href="#">The Sun Trail</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/a/ac/DTC-2.jpg/revision/latest?cb=20250711162308" height="200px">
+     <br>
+      <a href="#">Thunder Rising</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/c/c9/DTC-3.jpg/revision/latest?cb=20250102134811" height="200px">
+     <br>
+      <a href="#">The First Battle</a>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/8/81/DTC-4.jpg/revision/latest?cb=20250102135054" height="200px">
+     <br>
+      <a href="#">The Blazing Star</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/0/04/DTC-5.jpg/revision/latest?cb=20201104214739" height="200px">
+     <br>
+      <a href="#">A Forest Divided</a>
+    </div>
+    <div class="col">
+     <img src="https://static.wikia.nocookie.net/warriors/images/3/3d/DTC-6.jpg/revision/latest?cb=20240626130901" height="200px">
+     <br>
+      <a href="#">Path of Stars</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+    </div>
+    <div class="col">
+      <h1>Wiki Links</h1>
+      <h2>Getting Started</h2>
+         <ul>
+           <li>Familiarizing yourself with our <a href="#">rules and blocking policy</a> and our <a href="#">beginner's guide</a>.</li>
+           <li>We have several character and world articles that either require <a href="#">vast expansion</a>, are <a href="#">missing minor information</a>, or require <a href="#">formatting updates</a>. If there is something missing and you have the means of adding it, go right ahead!</li>
+           <li>Participating in one or multiple of our <a href="#">content projects</a>, including our popular <a href="#">art project</a>.</li>
+            <li>Join our <a href="#">Discord server</a>!</li>
+            <li>Have any questions? Ask a staff member or on the beginner's guide <a href="#">talk page</a>.</li>
+      </ul>
+    <br>
+    <h2>The Projects</h2>
+      <ul>
+        <li><a href="#">Warriors Wiki:Books</a></li>
+        <li><a href="#">Warriors Wiki:Characters</a></li>
+        <li><a href="#">Warriors Wiki: Charart</a></li>
+        <li><a href="#">Warriors Wiki: World</a></li>
+        <li><a href="#">Warriors Wiki: Operations</a></li>
+      </ul>
+    <br>
+    <h2>Administrators</h2>
+      <ul>
+        <li><a href="#">SnowedLightning</a></li>
+        <li><a href="#">Spookywilloww</a></li>
+        <li><a href="#">Vector Sigma</a></li>
+        <li><a href="#">See more...</a></li>
+      </ul>
+    <br>
+    <h1>To Do List</h1>
+    <h2>Articles that need some work!</h2>
+    <h3>Want to help the wiki out? Try filling out or expanding some of these pages!</h3>
+    <ul>
+        <li><a href="#">Similarities and Differences in the Updated Books</a></li>
+        <li><a href="#">The Ultimate Guide/The Early Settlers</a></li>
+        <li><a href="#">The Ultimate Guide/The Return of Heroes</a></li>
+        <li><a href="#">Field Guides</a></li>
+        <li><a href="#">Tallstar's Revenge/Chapter 34</a></li>
+        <li><a href="#">See more...</a></li>
+    </ul>
+    <br>
+    <h1>Upcoming Releases</h1>
+    <ul>
+    <li><a href="#">The New Prophecy (volume 1)</a> ~ 30 June 2026</li>
+    <li><a href="#">Darktail's Judgement</a> ~ 8 September 2026</li>
+    <li><a href="#">Guiding Light</a> ~ 6 October 2026</li>
+    <li><a href="#">The New Prophecy (volume 2)</a> ~ March 2027</li>
+    <li><a href="#">Power of Three (volume 1)</a> ~ Winter 2028</li>
+    <li><a href="#">Power of Three (volume 2)</a> ~ Fall 2028</li>
+    <li><a href="#">Power of Three (volume 3)</a> ~ Winter 2029</li>
+    <li><a href="#">Omen of the Stars (volume 1)</a> ~ Fall 2029</li>
+    <li><a href="#">Omen of the Stars (volume 2)</a> ~ Winter 2030</li>
+    <li><a href="#">Omen of the Stars (volume 3)</a> ~ Fall 2030</li>
+    </ul>
+    <br>
+    <h1>Official Links</h1>
+    <ul>
+        <li><a href="https://warriorcats.com/" target="_blank">Warriors Website</a></li>
+        <li><a href="https://www.facebook.com/erinhunterbooks/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/warriorcatshubofficial/" target="_blank">Warriors Instagram</a></li>
+        <li><a href="https://www.instagram.com/erinhunterbooks/" target="_blank">Erin Hunter books Instagram</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
